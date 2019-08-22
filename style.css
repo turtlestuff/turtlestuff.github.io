@@ -3,10 +3,8 @@
     --dark-bg: linear-gradient(to bottom right, rgb(11, 55, 0), rgb(7, 38, 0));
     --dark-shadow: rgb(4,25,0);
     --dark-border: linear-gradient(to bottom right, rgb(44,207,2), rgb(43,181,1));
-    --dark-fg: rgb(142, 233, 142);
-    --dark-hidden-fg:dimgray;
+    --dark-fg: rgb(149, 255, 144);
     --light-bg: rgb(178, 241, 178);
-    --light-fg: #202020;
 }
 
 
@@ -15,7 +13,7 @@
     text-align: center;
 }
 header{
-    padding-bottom: 0.5em;
+    padding:1em;
     border-style: solid;
     border-width: thick;
     color: var(--dark-fg);
@@ -24,4 +22,41 @@ header{
     border-image-slice: 2;
     border-image-width: 0.4em;
     box-shadow: inset 4px 4px var(--dark-shadow);
+}
+header h1{
+    padding:0;margin:0;
+}
+ button{
+    padding: 0.5em;
+    margin: 0.5em;
+    border-style: solid;
+    border-width: thin;
+    color: var(--dark-fg);
+    background-image: var(--dark-bg);
+    border-image: var(--dark-border);
+    border-image-slice: 2;
+    border-image-width: 0.2em;
+    box-shadow: inset 4px 4px var(--dark-shadow);
+}
+ button:hover{
+    transition:0.05s;
+    background-image: var(--dark-border);
+    box-shadow: none;
+    color:var(--dark-shadow);
+
+}
+ button:active{
+    padding: 0.5em;
+    margin: 0.5em;
+    border-style: solid;
+    border-width: thin;
+    color: var(--dark-fg);
+    background-image: var(--dark-bg);
+    border-image: var(--dark-border);
+    border-image-slice: 2;
+    border-image-width: 0.2em;
+    box-shadow: inset 4px 4px var(--dark-shadow);
+}
+body{
+    background-color: var(--light-bg);
 }
